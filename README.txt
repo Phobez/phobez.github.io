@@ -1,33 +1,26 @@
-Strata by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Abia Herlianto Portfolio
 
+A static Next.js portfolio for software engineering, game development, and worldbuilding work.
 
-A simple, minimalist template that actually began life as an unused redesign of my
-personal site. Includes a (configurable) parallax background effect, Poptrox-powered
-lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
+## Development
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Requires Node.js 18.18 or later.
 
-(* = Not included)
+```sh
+npm install
+npm run dev
+```
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Run validation before opening a pull request:
 
-AJ
-aj@lkn.io | @ajlkn
+```sh
+npm run lint
+npm run type-check
+npm run build
+```
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+`npm run build` creates a static export in `out/`.
 
+## Deployment
 
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+GitHub Actions deploys the static export to GitHub Pages after pushes to `main`. The repository must have GitHub Pages configured to use **GitHub Actions** as its build and deployment source. Feature branches, including `prototype/homepage`, do not deploy.
