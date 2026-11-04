@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ThemeControl } from "./theme-control";
 
 const navigation = [
+  { href: "/software", label: "Software" },
   { href: "/#disciplines", label: "Work" },
   { href: "/#selected-work", label: "Selected work" },
   { href: "/#about", label: "About" },
