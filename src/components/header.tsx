@@ -4,6 +4,7 @@ import { ThemeControl } from "./theme-control";
 
 const navigation = [
   { href: "/software", label: "Software" },
+  { href: "/games", label: "Games" },
   { href: "/#disciplines", label: "Work" },
   { href: "/#selected-work", label: "Selected work" },
   { href: "/#about", label: "About" },
